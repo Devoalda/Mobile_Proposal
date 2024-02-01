@@ -22,7 +22,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, notitlepage]{article} % Default font size and suppress title page
+% \documentclass[11pt, notitlepage]{article} % Default font size and suppress title page
+\documentclass[a4paper, 11pt, notitlepage]{report}
 
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
@@ -47,23 +48,23 @@
 
 \author{
   Woon Jun Wei\\
-  \texttt{2200624@sit.singaporetech.edu.sg}
+  \texttt{2200624}
   \and
-  LastName2, FirstName2\\
-  \texttt{first2.last2@xxxxx.com}
+  Low Hong Sheng Jovian\\
+  \texttt{2203654}
   \and
-  LastName2, FirstName2\\
-  \texttt{first2.last2@xxxxx.com}
+  Benjamin Loh Choon How\\
+  \texttt{2201590}
   \and
-  LastName2, FirstName2\\
-  \texttt{first2.last2@xxxxx.com}
+  Poon Xiang Yuan\\
+  \texttt{2200559}
   \and
-  LastName2, FirstName2\\
-  \texttt{first2.last2@xxxxx.com}
+  Wang Rongqi Richie\\
+  \texttt{2201942}
 }
 
 \title{
-  INF2007 - Mobile Application Develpopment - Project Design
+  INF2007 - Mobile Application Develpopment - Project Design 
 }
 %----------------------------------------------------------------------------------------
 
@@ -71,40 +72,56 @@
 
 \maketitle
 
-
 %----------------------------------------------------------------------------------------
-%	Proposal
+%	Proposal Section
 %----------------------------------------------------------------------------------------
 
 \import{Sections/}{Proposal}
 
 %----------------------------------------------------------------------------------------
-%	User Stories
+%	User Stories Section
 %----------------------------------------------------------------------------------------
 
-\newpage
 \import{Sections/}{User_Stories}
 
 %----------------------------------------------------------------------------------------
-%	UI Prototypes
+%	UI Prototypes Section
 %----------------------------------------------------------------------------------------
 
-\newpage
+% \newpage
 \import{Sections/}{UI_Prototypes}
 
 %----------------------------------------------------------------------------------------
-%	Backlogs
+%	Backlogs Section
 %----------------------------------------------------------------------------------------
 
-\newpage
 \import{Sections/}{Backlogs}
 
 %----------------------------------------------------------------------------------------
-%	Architecture
+%	Architecture Section
+%----------------------------------------------------------------------------------------
+
+\import{Sections/}{Software_Architecture}
+
+%----------------------------------------------------------------------------------------
+%	Appendix Section
+%----------------------------------------------------------------------------------------
+\appendix
+\import{Appendix/}{Appendix_A}
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
 \newpage
-\import{Sections/}{Software_Architecture}
+
+\bibliography{Mobile_Project_Design} % Use the NIHGrant.bib file for the reference list, replace with your own
+\bibliographystyle{ieee} % Use the custom nihunsrt bibliography style included with the template
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
 
 %----------------------------------------------------------------------------------------
 %	SPECIFIC AIMS
@@ -383,16 +400,3 @@
 %	\item{Sharing Model Organisms:} Regardless of the amount requested, all applications where the development of model organisms is anticipated are expected to include a description of a specific plan for sharing and distributing unique model organisms or state why such sharing is restricted or not possible. See Sharing Model Organisms Policy, and NIH Guide NOT-OD-04-042.
 %	\item{Genome Wide Association Studies (GWAS):} Applicants seeking funding for a genome-wide association study are expected to provide a plan for submission of GWAS data to the NIH-designated GWAS data repository, or an appropriate explanation why submission to the repository is not possible. GWAS is defined as any study of genetic variation across the entire genome that is designed to identify genetic associations with observable traits (such as blood pressure or weight) or the presence or absence of a disease or condition. For further information see Policy for Sharing of Data Obtained in NIH Supported or Conducted Genome-Wide Association Studies, NIH Guide NOT-OD-07-088, and http://grants.nih.gov/grants/gwas/.
 %\end{enumerate}
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-\newpage
-
-\bibliography{Mobile_Project_Design} % Use the NIHGrant.bib file for the reference list, replace with your own
-\bibliographystyle{ieee} % Use the custom nihunsrt bibliography style included with the template
-
-%----------------------------------------------------------------------------------------
-
-\end{document}
