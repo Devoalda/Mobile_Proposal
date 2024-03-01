@@ -2,111 +2,133 @@
 
 \section{Product Backlog}\label{product_backlog}
 
-\begin{longtable}{|c|p{8cm}|c|}
+\begin{longtable}{|c|p{7cm}|c|c|}
     \caption*{Product Backlog} \\
     \hline
-    \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
+    \textbf{ID} & \textbf{User Story} & \textbf{Priority} & \textbf{Status} \\
     \hline
     \endfirsthead
     
-    \multicolumn{3}{c}%
+    \multicolumn{4}{c}%
     {{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
     \hline
-    \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
+    \textbf{ID} & \textbf{User Story} & \textbf{Priority} & \textbf{Status} \\
     \hline
     \endhead
 
-    \hline \multicolumn{3}{|r|}{{Continued on next page}} \\ \hline
+    \hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
     \endfoot
 
     \hline \hline
     \endlastfoot
-
-    1 & Efficient Assistance for Challenging Concepts: Users can post questions and receive timely responses, facilitating efficient learning support. & High \\
+    1 & Efficient Assistance for Challenging Concepts: Users can post questions and receive timely responses, facilitating efficient learning support. & High & $\text{\rlap{$\checkmark$}}\square$\\
     \hline
-    2 & Comprehensive Learning Resources: The platform provides accessible and personalized learning resources, catering to diverse learning styles. & High \\
+    2 & Comprehensive Learning Resources: The platform provides accessible and personalized learning resources, catering to diverse learning styles. & High & $\square$\\
     \hline
+    3 & Sign-in Functionality: Users should be able to sign in to the platform securely. & High & $\text{\rlap{$\checkmark$}}\square$\\
     \hline
-    3 & Sign-in Functionality: Users should be able to sign in to the platform securely. & High \\
+    4 & Account Creation Feature: A user-friendly process for creating new accounts. & Medium & $\text{\rlap{$\checkmark$}}\square$\\
     \hline
-    4 & Account Creation Feature: A user-friendly process for creating new accounts. & Medium \\
+    5 & Password Reset Capability: Users should have the option to reset their passwords. & Low & $\text{\rlap{$\checkmark$}}\square$\\
     \hline
-    5 & Password Reset Capability: Users should have the option to reset their passwords. & Low \\
+    6 & User Profile Management: Users can edit and manage their profiles, enhancing personalization. & Medium & $\square$\\
     \hline
-    6 & User Profile Management: Users can edit and manage their profiles, enhancing personalization. & Medium \\
+    7 & Notification System: Implement a notification system to alert users about responses, updates, and relevant information. & Medium & $\square$\\
     \hline
-    7 & Notification System: Implement a notification system to alert users about responses, updates, and relevant information. & Medium \\
+    8 & Voting Mechanism: Introduce a voting system for assessing and prioritizing responses. & High & $\square$\\
     \hline
-    8 & Voting Mechanism: Introduce a sophisticated voting system for assessing and prioritizing responses. & High \\
+    9 & Tag Subscription (Following): Users can subscribe to specific tags for a personalized feed of questions. & Medium & $\square$\\
     \hline
-    9 & Tag Subscription (Following): Users can subscribe to specific tags for a personalized feed of questions. & Medium \\
+    10 & Explore Page: A curated page showcasing a collection of questions for users to explore. & Low & $\square$\\
     \hline
-    10 & Explore Page: A curated page showcasing a collection of questions for users to explore. & Low \\
+    11 & Camera Functionality: Integration of video and picture capabilities for visual content sharing. & Medium & $\square$\\
     \hline
-    11 & Camera Functionality: Integration of video and picture capabilities for visual content sharing. & Medium \\
+    12 & OCR Integration: Implement Optical Character Recognition (OCR) for efficient conversion of printed or handwritten text into digital content. & Low & $\square$\\
     \hline
-    12 & OCR Integration: Implement Optical Character Recognition (OCR) for efficient conversion of printed or handwritten text into digital content. & Low \\
+    13 & SQLite Data Cache: Implement Data Caching to prevent overloading of Online Database & Medium & $\square$\\
+    \hline
+    14 & Search: Efficient Searching for Users/Questions/tags & Medium & $\square$\\
+    \hline
+    15 & Questions and Answer Display & High & $\square$\\
+    \hline
+    16 & Color Scheme and theming & Low & $\square$\\
+    \hline
+    17 & Real-time Chat & Medium & $\square$\\
+    \hline
+    18 & AI-generated Answer Feature: Implement a feature to generate answers using AI. & Medium & $\square$\\
+    \hline
 \end{longtable}
+
 
 
 \section{Sprint Backlog}\label{sprint_backlog}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \caption*{Sprint Backlog - Sprint 1}
-    \begin{tabular}{|c|p{5cm}|c|}
+    \begin{tabular}{|c|p{5cm}|c|c|}
         \hline
-        \textbf{ID} & \textbf{Task} & \textbf{Estimate (hours)} \\
+        \textbf{ID} & \textbf{Task} & \textbf{Estimate (hours)} & \textbf{Status} \\
         \hline
-        1 & Implement sign-in functionality & 8 \\
+        1 & Firebase setup and integration. & 4 & $\text{\rlap{$\checkmark$}}\square$\\
         \hline
-        2 & Design user registration form & 5 \\
+        3 & Implement sign-in functionality & 8 & $\text{\rlap{$\checkmark$}}\square$\\
         \hline
-        3 & Set up password reset functionality & 3 \\
+        4 & Design user registration form & 5 & $\text{\rlap{$\checkmark$}}\square$\\
         \hline
-        6 & Sign-in Functionality: Users should be able to sign in to the platform securely. & 8 \\
+        5 & Set up password reset functionality & 3 & $\text{\rlap{$\checkmark$}}\square$\\
         \hline
-        7 & Account Creation Feature: A user-friendly process for creating new accounts. & 6 \\
+        6 & User Profile Management: Implement user profile editing and management features & 10 & $\text{\rlap{$\checkmark$}}\square$\\
         \hline
     \end{tabular}
 \end{table}
 
-\begin{table}[h]
+
+\begin{table}[H]
     \centering
     \caption*{Sprint Backlog - Sprint 2}
-    \begin{tabular}{|c|p{5cm}|c|}
+    \begin{tabular}{|c|p{5cm}|c|c|}
         \hline
-        \textbf{ID} & \textbf{Task} & \textbf{Estimate (hours)} \\
+        \textbf{ID} & \textbf{Task} & \textbf{Estimate (hours)} & \textbf{Status} \\
         \hline
-        4 & User Profile Management: Implement user profile editing and management features & 10 \\
+        7 & Notification System: Develop a system to alert users about responses and updates & 8 & $\text{\rlap{}}\square$\\
         \hline
-        5 & Notification System: Develop a system to alert users about responses and updates & 8 \\
+        8 & Voting Mechanism: Integrate a voting system for assessing and prioritizing responses & 5 & $\text{\rlap{}}\square$\\
         \hline
-        11 & Voting Mechanism: Integrate a sophisticated voting system for assessing and prioritizing responses & 12 \\
+        15.1 & Post Answer Page & 6 & $\text{\rlap{}}\square$\\
         \hline
-        12 & Tag Subscription (Following): Implement the feature allowing users to subscribe to specific tags & 9 \\
+        15.2 & View Single Question Page & 5 & $\text{\rlap{}}\square$\\
+        \hline
+        9 & Tag Subscription (Following): Implement the feature allowing users to subscribe to specific tags & 9 & $\text{\rlap{}}\square$\\
+        \hline
+        13 & SQLite Data Cache: Implement Data Caching to prevent overloading of Online Database & 8 & $\text{\rlap{}}\square$\\
+        \hline
+        14 & Search: Efficient Searching for Users/Questions/tags & 10 & $\text{\rlap{}}\square$\\
+        \hline
+        17 & Real-time Chat & 8 & $\text{\rlap{}}\square$\\
         \hline
     \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \caption*{Sprint Backlog - Sprint 3}
-    \begin{tabular}{|c|p{5cm}|c|}
+    \begin{tabular}{|c|p{5cm}|c|c|}
         \hline
-        \textbf{ID} & \textbf{Task} & \textbf{Estimate (hours)} \\
+        \textbf{ID} & \textbf{Task} & \textbf{Estimate (hours)} & \textbf{Status}\\
         \hline
-        8 & Explore Page: Develop a curated page showcasing a collection of questions for users to explore & 6 \\
+        10 & Explore Page: Develop a curated page showcasing a collection of questions for users to explore & 6 & $\text{\rlap{}}\square$\\
         \hline
-        9 & Camera Functionality: Integrate video and picture capabilities for visual content sharing & 8 \\
+        11 & Camera Functionality: Integrate video and picture capabilities for visual content sharing & 8 & $\text{\rlap{}}\square$\\
         \hline
-        10 & OCR Integration: Implement Optical Character Recognition (OCR) for efficient text conversion & 10 \\
+        12 & OCR Integration: Implement Optical Character Recognition (OCR) for efficient text conversion & 10 & $\text{\rlap{}}\square$\\
         \hline
-        13 & Explore Page: A curated page showcasing a collection of questions for users to explore. & 6 \\
+        16 & Color Scheme and theming & 2 & $\text{\rlap{}}\square$\\
         \hline
-        14 & Camera Functionality: Integration of video and picture capabilities for visual content sharing. & 8 \\
-        \hline
-        15 & OCR Integration: Implement Optical Character Recognition (OCR) for efficient conversion of printed or handwritten text into digital content. & 10 \\
+        18 & AI-generated Answer Feature: Implement a feature to generate answers using AI. & 12 & $\text{\rlap{}}\square$\\
         \hline
     \end{tabular}
 \end{table}
+
+
+\section*{Updated Date: \today}
